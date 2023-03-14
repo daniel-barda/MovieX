@@ -39,7 +39,7 @@ export const ContactUs = () => {
               <button class="btn-submit">Submit</button>
             </form>
           </div>
-          <div class="cta-img" role="img"></div>
+          <div class="cta-img" role="img" aria-label="Contact us img"></div>
         </div>
       </section>
       <Footer />

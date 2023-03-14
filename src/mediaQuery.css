@@ -101,7 +101,9 @@
   }
 }
 
-/* - Font sizes (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 - Spacing system (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */ /**** Swiper ****/
+/* - Font sizes (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 -   Spacing system (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/**** Swiper ****/
 
 /* Single Movie */
 
@@ -145,12 +147,9 @@
   .content-movie {
     max-width: 60rem;
   }
-}
 
-/* BELOW 611px */
-@media (max-width: 44em) {
-  html {
-    font-size: 43.75%;
+  .title-movie {
+    font-size: 3rem;
   }
 }
 
@@ -162,10 +161,6 @@
   .btn-credit-left {
     display: none;
   }
-
-  .title-movie {
-    font-size: 3rem;
-  }
 }
 
 /* BELOW 451px */
@@ -175,10 +170,16 @@
     gap: 2rem;
   }
 
+  .title-movie {
+    font-size: 2.4rem;
+  }
+
   .content-movie {
-    max-width: 50rem;
+    max-width: 40rem;
   }
 }
+
+/* - Font sizes (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 -   Spacing system (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
 /* swiper */
 @media screen and (min-width: 1200px) {

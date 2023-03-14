@@ -16,6 +16,7 @@ export const MovieList = ({ title, data }) => {
     <div className="category">
       <button
         className="btn btn--left"
+        aria-label="btn-slider-left"
         onClick={() => swiperRef.current?.slidePrev()}
       >
         <BsChevronLeft size={40} />
@@ -69,6 +70,7 @@ export const MovieList = ({ title, data }) => {
       </Swiper>
 
       <button
+        aria-label="btn-slider-right"
         className="btn btn--right"
         onClick={() => swiperRef.current?.slideNext()}
       >

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Search } from "./Search";
 import background from "../images/bg.jpg";
 import background2 from "../images/bg.webp";

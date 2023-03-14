@@ -29,7 +29,11 @@ export const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <button className="nav-mobile" onClick={() => setIsOpen(!isOpen)}>
+      <button
+        className="nav-mobile"
+        aria-label="btn-menu-mobile"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <AiOutlineMenu className="icon-mobile" name="menu-outline" />
         <AiOutlineClose className="icon-mobile" name="close-outline" />
       </button>

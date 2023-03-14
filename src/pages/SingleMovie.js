@@ -124,7 +124,7 @@ export const SingleMovie = () => {
               channel="youtube"
               autoplay
               isOpen={isOpen}
-              videoId={video_Trailer ? video_Trailer[0].key : null}
+              videoId={video_Trailer ? video_Trailer[0]?.key : null}
               onClose={() => setOpen(false)}
             />
             <p className="overview">Overview</p>
