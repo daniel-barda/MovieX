@@ -8,8 +8,8 @@ export const SectionHero = () => {
     <section className="section-hero grid grid-col-auto">
       <Search />
       <picture>
-        <source srcset={background2} type="image/webp" />
-        <source srcset={background} type="image/png" />
+        <source srcSet={background2} type="image/webp" />
+        <source srcSet={background} type="image/png" />
 
         <img className="img-hero" src={background} alt="cinema img" />
       </picture>

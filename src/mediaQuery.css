@@ -42,12 +42,15 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
+    z-index: 99999;
+    position: fixed;
   }
 
   .nav-open .nav-mobile {
     display: flex;
     align-self: flex-end;
-    z-index: 999;
+    z-index: 99999;
+    position: fixed;
   }
 
   .nav-open .icon-mobile[name="menu-outline"] {

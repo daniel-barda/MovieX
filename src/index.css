@@ -91,6 +91,8 @@ body {
 .header {
   position: relative;
   padding: 4rem 2rem;
+  /* padding: 0 2rem;
+  height: 19rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
