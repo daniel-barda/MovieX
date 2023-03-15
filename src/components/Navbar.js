@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Logo } from "./Logo";
@@ -12,20 +12,42 @@ export const Navbar = () => {
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>
-            <Link className="main-nav-link main-nav-link--active" to="/">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "main-nav-link main-nav-link--active"
+                  : "main-nav-link"
+              }
+              to="/"
+            >
               Home
-            </Link>
-          </li>
-          <li>
-            <Link className="main-nav-link" to="/Movies">
-              Movies
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link className="main-nav-link" to="/ContactUs">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "main-nav-link main-nav-link--active"
+                  : "main-nav-link"
+              }
+              to="/Movies"
+            >
+              Movies
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "main-nav-link main-nav-link--active"
+                  : "main-nav-link"
+              }
+              to="/ContactUs"
+            >
               Contact Us
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
