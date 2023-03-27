@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const Search = () => {
   const { isLoading, MoviesSearch } = useSelector((store) => store.MoviesSlice);
-  const disptach = useDispatch();
+  const dispatch = useDispatch();
   const [search, setSearch] = useState("");
 
   const handleSearch = (e) => {
@@ -15,10 +15,10 @@ export const Search = () => {
   };
 
   useEffect(() => {
-    if (search.length <= 0) disptach(clearSearch());
+    if (search.length <= 0) dispatch(clearSearch());
     if (!search) return; // guard clauses
 
-    disptach(searchMovie(search));
+    dispatch(searchMovie(search));
   }, [search]);
 
   return (
